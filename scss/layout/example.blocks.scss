@@ -1,0 +1,17 @@
+/* Basic block styling for demo purposes */
+.block {
+	margin-bottom: $margin-default;
+	padding: $padding-default;
+	background-color: $color03;
+	color: $color04;
+	border-radius: $radius;
+}
+.block-small {
+	@extend .block;
+	font-size: 1.4rem;
+}
+
+/* Add a border on a block */
+// .block-border {
+// 	border: 1px solid $color02;
+// }

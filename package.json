@@ -1,0 +1,44 @@
+{
+  "name": "castlecss",
+  "version": "1.0.0",
+  "description": "CastleCSS is a modulular, mobile first, upgradable SCSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastleCSS/castlecss.git"
+  },
+  "keywords": [
+    "castlecss",
+    "castle",
+    "css",
+    "scss",
+    "framework",
+    "building",
+    "blocks",
+    "modular"
+  ],
+  "author": "Darius Rosendahl <darius@denieuwezaak.nl> (http://www.castlecss.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CastleCSS/castlecss/issues"
+  },
+  "homepage": "http://www.castlecss.com",
+  "dependencies": {
+    "castlecss-buttons": "^0.4.1",
+    "castlecss-core": "^1.7.3",
+    "castlecss-notifications": "^0.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "cssnano": "^3.7.3",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "pixrem": "^3.0.0"
+  }
+}
