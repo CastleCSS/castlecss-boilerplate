@@ -1,25 +1,27 @@
 /* 	core variable files */
-@import "node_modules/castlecss-core/sass/variables"; 
+@import "node_modules/castlecss-core/sass/variables";
 
 /* 	Your own variables */
-@import "variables"; 
+@import "variables";
 
 /* 	rest of core files */
-@import "node_modules/castlecss-core/sass/main"; 
-@import "node_modules/castlecss-buttons/sass/main"; 
-@import "node_modules/castlecss-notifications/sass/main"; 
+@import "node_modules/castlecss-core/sass/main";
+@import "node_modules/castlecss-buttons/sass/main";
+@import "node_modules/castlecss-notifications/sass/main";
 
 /* 	Include your own files below this line
-	-------------------------------------- 
+	--------------------------------------
 */
 
-@import "layout/example.header";
+@import "layout/example.navigation";
+@import "layout/example.hero";
 @import "layout/example.blocks";
+@import "layout/example.footer";
 
-/* 	
-	-------------------------------------- 
+/*
+	--------------------------------------
 	Include your own files above this line
 */
 
-@import "node_modules/castlecss-core/sass/base/utility"; 
-@import "node_modules/castlecss-core/sass/base/utility_spacers"; 
+@import "node_modules/castlecss-core/sass/base/utility";
+@import "node_modules/castlecss-core/sass/base/utility_spacers";

@@ -1,80 +1,74 @@
-# CastleCSS (Full package)
-A modular, updatable, easy to use HTML and SCSS framework.
+# CastleCSS Boilerplate
+[CastleCSS](https://github.com/CastleCSS/) is a modular, updatable and easy to use HTML and SCSS framework.
+Use this Boilerplate to get started with your project right away!
 
 ![CastleCSS logo @CastleCss.com](https://www.doordarius.nl/castlecss-logo-250.png)
 
 ## What's included?
-Included in this package:
-- Example project setup
-- Gruntfile.js and tasks
+- A simple and mobile-friendly HTML5 template to kickstart your website
+- Configuration for Grunt, to easily compile and minify your Sass files
 - [castlecss-core](https://github.com/CastleCSS/castlecss-core)
 - [castlecss-buttons](https://github.com/CastleCSS/castlecss-buttons)
 - [castlecss-notifications](https://github.com/CastleCSS/castlecss-notifications)
-- [castlecss-docs (documentation)](https://github.com/CastleCSS/castlecss-docs)
 
-## How to install
-CastleCSS is built with easy updating in mind.
-You can download the full package and make adjustments as long as you don't update the dependencies (core, buttons, notifications and docs). When you decide to adjust the dependencies, you will lose them with the next update.
+## Get started
+1. Clone ```git clone https://github.com/CastleCSS/castlecss.git``` or [download](https://github.com/CastleCSS/castlecss-boilerplate/archive/master.zip) CastleCSS Boilerplate.
+2. Set up your project directory and a basic site structure.
+3. Run Grunt from your directory by typing ```Grunt``` in the commandline. If you haven't used Grunt before, be sure to check out the Getting Started guide.
+4. Add some content, do some styling and include functionality.
+5. Run your site locally and see how it all works out!
 
-There are a few ways to install:
-
-- [Download the latest release](https://github.com/CastleCSS/castlecss/archive/master.zip)
-- Clone the package ```git clone https://github.com/CastleCSS/castlecss.git```
-- Install via [npm](https://www.npmjs.com/): ```npm install castlecss```
-- Add it to your package.json in your own npm package
-
-When downloading or cloning CastleCSS, you have to run ```npm install``` from the directory to get the full package (core, buttons, notifications and docs). 
-
-## Updating files
-
-NOTE: Only update the dependencies so that you don't overwrite your own SCSS files. If you do update the full package you'll overwrite everything.
-
-We recommend downloading the full package and updating the dependencies like:
-```
-npm update castlecss-core
-npm update castlecss-buttons
-npm update castlecss-notifications
-npm update castlecss-docs
-```
-
-## Documentation and examples
-You can find the documentation and examples at http://www.castlecss.com and included in this package (castlecss-docs)
-
-## Setup
-Your project should have a setup similair to this (included in the Full package):
-With this you make sure your own variables overwrite the castle-core variables and your setup is still updatable.
+## Basic structure
+The basis structure for your website should look similar like this:
 
 ```
-| Your project/
+| Project directory/
 |
-|-- scss/
-| |-- /* Custom project specific scss files here */
-| |-- main.scss
-| |
 |-- node_modules/
+| | -- castlecss-core/
+| | --castlecss-buttons/
+| | --castlecss-notifications/
 | |
-| | /*	CastleCSS files included automatically here */
-| | castlecss-core/
-| | castlecss-buttons/
-| | castlecss-etc ;)/
+|-- scss/
+| |-- main.scss
+| |-- variables.scss
+| |
+|-- img/
+|-- dist/
+| |-- styles.min.css
+| |-- styles.min.map
+| |
+|-- index.html
+|-- Gruntfile.js
+|-- package.json
 ```
 
 ### main.scss
-Your main.scss should have a setup similar to this (included in the [CastleCSS (Full package)](https://github.com/CastleCSS/castlecss)):
+Your main.scss should have the following set-up:
 
 ```
-/*  castlecss variable files */
-@import "path/to/castlecss-core/sass/variables";
+/* 	CastleCSS Core variables */
+@import "node_modules/castlecss-core/sass/variables";
 
-
-/*  Your own variables so they overwrite the core */
+/* 	Your variables */
 @import "variables";
-/*  rest of castle files */
-@import "path/to/castlecss-core/sass/main";
-@import "path/to/castlecss-buttons/sass/variables";
-@import "path/to/castlecss-notifications/sass/variables";
 
-/*  Include your own files below this line
-    --------------------------------------
-*/
+/* 	Remaining Core files and other CastleCSS modules */
+@import "node_modules/castlecss-core/sass/main";
+@import "node_modules/castlecss-buttons/sass/main";
+@import "node_modules/castlecss-notifications/sass/main";
+
+/* Include your own files below this line
+   -------------------------------------- */
+
+
+
+/* --------------------------------------
+   Include your own files above this line */
+
+@import "node_modules/castlecss-core/sass/base/utility";
+@import "node_modules/castlecss-core/sass/base/utility_spacers";
 ```
+
+## Documentation and examples
+Check out http://www.castlecss.com for an extended documentation and more examples!
