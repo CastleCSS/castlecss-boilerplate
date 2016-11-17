@@ -1,0 +1,16 @@
+// Basic block styling for demo purposes
+.block {
+	margin-bottom: $margin-default;
+	padding: $padding-default;
+	background-color: $color03;
+	color: $color04;
+	border-radius: $radius;
+
+	&.transparent {
+		background: none;
+	}
+
+	&.border {
+		border: 1px solid $color03;
+	}
+}

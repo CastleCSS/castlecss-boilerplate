@@ -1,0 +1,65 @@
+/*
+	Variables
+	EDIT YOUR SITE VARIABLES HERE
+*/
+
+/*
+	Base colors
+	Color 01 and 02 reservered for white and black
+*/
+$color03: #eeeeee;
+$color04: #222222;
+$radius: 3px;
+
+/*	Theme colors */
+$theme01: 	#1B94BF;	// Knight blue
+$theme02: 	#093142; 	// Royal blue
+$theme03:	#12637F;	// Falcon blue
+$theme04:	#FFC200;	// Royal yellow
+$theme05:	#FFFFFF;	// Destroyer white
+
+$alert:		#FFD700;
+$negative:	#FF7878;
+$positive:	#29C85D;
+$disabled:	#CDCDC1;
+
+/* Breakpoints */
+$b1: 320px;
+$b2: 480px;
+$b3: 768px;
+$b4: 1024px;
+$b5: 1280px;
+$b6: 1600px;
+
+/* Container sizes */
+$container: 100%;
+$container-b1: 100%;
+$container-b2: 100%;
+$container-b3: 744px;
+$container-b4: 996px;
+$container-b5: 1224px;
+$container-b6: 1400px;
+
+/* Grid */
+$flexbox-grid:	 true;
+$grid-gutter:	 12px;
+$grid-gutter-b1: 12px;
+$grid-gutter-b2: 12px;
+$grid-gutter-b3: 12px;
+$grid-gutter-b4: 12px;
+$grid-gutter-b5: 12px;
+$grid-gutter-b6: 12px;
+
+/* Default margin, padding, gutter */
+$padding-default: 	12px;
+$margin-default: 	12px;
+
+/* Standard border-radius */
+$radius:	5px;
+
+/* Fonts */
+$font-pri: 'Open Sans', Helvetica, Arial;
+$font-sec: 'Open Sans', Helvetica, Arial;
+
+$font-size-default: 1.6rem;
+$line-height-default: 1.5;
