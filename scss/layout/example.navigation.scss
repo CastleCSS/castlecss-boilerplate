@@ -1,3 +1,4 @@
+// Basic navbar styling for demo purposes
 .navbar {
 	width: 100%;
 	text-align: center;
@@ -63,7 +64,6 @@
 		}
 
 		// Styling for the logo.
-		// Make adjustments to the height of the logo.
 		.logo {
 			display: inline-block;
 			margin: 0 $margin-default*3 0 0;
@@ -73,7 +73,7 @@
 		.nav {
 			display: inline-block;
 
-			// Styling for first level menu items
+			// First level menu items
 			> li {
 				float: left;
 				margin-left: $margin-default;

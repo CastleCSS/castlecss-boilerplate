@@ -1,4 +1,4 @@
-/* Basic block styling for demo purposes */
+// Basic block styling for demo purposes
 .block {
 	margin-bottom: $margin-default;
 	padding: $padding-default;
@@ -13,18 +13,4 @@
 	&.border {
 		border: 1px solid $color03;
 	}
-}
-.block-small {
-	@extend .block;
-	font-size: 1.4rem;
-}
-
-// Temp
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-top: 0;
 }
