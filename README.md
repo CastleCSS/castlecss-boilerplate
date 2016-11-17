@@ -47,19 +47,21 @@ The basis structure for your website should look similar like this:
 Your main.scss should have the following set-up:
 
 ```
-/* 	Core variables */
+/* 	CastleCSS Core variables */
 @import "node_modules/castlecss-core/sass/variables";
 
 /* 	Your variables */
 @import "variables";
 
-/* 	Remaining core files */
+/* 	Remaining Core files and other CastleCSS modules */
 @import "node_modules/castlecss-core/sass/main";
 @import "node_modules/castlecss-buttons/sass/main";
 @import "node_modules/castlecss-notifications/sass/main";
 
 /* Include your own files below this line
    -------------------------------------- */
+
+
 
 /* --------------------------------------
    Include your own files above this line */
