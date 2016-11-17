@@ -1,16 +1,17 @@
 {
-  "name": "castlecss",
+  "name": "castlecss-boilerplate",
   "version": "1.0.0",
-  "description": "CastleCSS is a modulular, mobile first, upgradable SCSS framework",
+  "description": "Boilerplate for CastleCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CastleCSS/castlecss.git"
+    "url": "git+https://github.com/CastleCSS/castlecss-boilerplate.git"
   },
   "keywords": [
+	"boilerplate",
     "castlecss",
     "castle",
     "css",
@@ -23,12 +24,12 @@
   "author": "Darius Rosendahl <darius@denieuwezaak.nl> (http://www.castlecss.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CastleCSS/castlecss/issues"
+    "url": "https://github.com/CastleCSS/castlecss-boilerplate/issues"
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
     "castlecss-buttons": "^0.4.1",
-    "castlecss-core": "^1.7.3",
+    "castlecss-core": "^2.0.1",
     "castlecss-notifications": "^0.3.0"
   },
   "devDependencies": {
