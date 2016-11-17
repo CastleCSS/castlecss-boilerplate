@@ -5,13 +5,26 @@
 	background-color: $color03;
 	color: $color04;
 	border-radius: $radius;
+
+	&.transparent {
+		background: none;
+	}
+
+	&.border {
+		border: 1px solid $color03;
+	}
 }
 .block-small {
 	@extend .block;
 	font-size: 1.4rem;
 }
 
-/* Add a border on a block */
-// .block-border {
-// 	border: 1px solid $color02;
-// }
+// Temp
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+}

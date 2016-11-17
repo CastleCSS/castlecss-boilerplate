@@ -1,0 +1,83 @@
+.navbar {
+	width: 100%;
+	text-align: center;
+	padding: $padding-default 0;
+
+	// Styling for the logo.
+	// Make adjustments to the height of the logo.
+	.logo {
+		display: block;
+		height: 30px;
+		margin: 0 0 $margin-default 0;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	// Styling for the menu
+	.nav {
+		display: block;
+
+		// Styling for first level menu items
+		> li {
+		}
+	}
+
+	// Default navbar with a light background
+	&.navbar-default {
+		background-color: $color03;
+		color: $color01;
+
+		a { color: $color02; }
+	}
+
+	// Inverted navbar with of course a dark background
+	&.navbar-inverted {
+		background-color: $theme02;
+		color: $color01;
+
+		a {	color: $color01; }
+	}
+
+	// Navbar with a fixed position at te top
+	// Make sure you add padding (inherited from the navbar) to the top of the body
+	&.navbar-fixed {
+		position: fixed;
+		top: 0;
+	}
+}
+
+@media only screen and (min-width: $b3) {
+
+	.navbar {
+		padding: 0;
+		text-align: left;
+		height: 75px;
+
+		// Vertical align for all container's children
+		.container {
+			display: flex;
+			align-items: center;
+			height: 100%;
+		}
+
+		// Styling for the logo.
+		// Make adjustments to the height of the logo.
+		.logo {
+			display: inline-block;
+			margin: 0 $margin-default*3 0 0;
+		}
+
+		// Styling for the menu
+		.nav {
+			display: inline-block;
+
+			// Styling for first level menu items
+			> li {
+				float: left;
+				margin-left: $margin-default;
+			}
+		}
+	}
+}
