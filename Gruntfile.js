@@ -1,7 +1,7 @@
 /*	Grunt Task configuration */
 module.exports = function(grunt) {
 
-	/* using jit-grunt for automatically loading all required plugins */
+	/* Using jit-grunt for automatically loading all required plugins */
 	require('jit-grunt')(grunt);
 
 	grunt.initConfig({
@@ -20,56 +20,56 @@ module.exports = function(grunt) {
 			}
 		},
 
-		// PostCSS for adding prefixers and setting rem to pixels;
+		// PostCSS for adding prefixers and setting rem to pixel
 		postcss: {
 			dist: {
 				src: 'dist/css/styles.min.css'
 			},
-			options: { 
+			options: {
 				// Rewrite and save sourcemap as seperate file
 				map: {
 					inline: false,
 					annotation: 'styles/'
 				},
 				processors: [
-					// add fallbacks for rem units
+					// Add fallbacks for rem units
 					require('pixrem')({
 						atrules: true
 					}),
-					// add vendor prefixes
-					require('autoprefixer')({ browsers: 'iOS >= 7, last 2 versions, ie > 7' }), 
-					// minify the result
+					// Add vendor prefixes
+					require('autoprefixer')({
+						browsers: 'iOS >= 7, last 2 versions, ie > 7'
+					}),
+					// Minify the result
 					require('cssnano')()
-					]
-				},
-			},
+				]
+			}
+		},
 
-			watch: {
-				files: 'scss/**/*.scss',
-				tasks: ['sass', 'postcss'],
-				options: {
-					spawn: false,
-				},
-			},
+		// Watches for changes in your .scss-files and triggers the tasks sass and postcss.
+		watch: {
+			files: 'scss/**/*.scss',
+			tasks: ['sass', 'postcss'],
+			options: {
+				spawn: false,
+			}
+		}
+	})
 
-		});
-/*
-*	Grunt tasks	
-*	Run with grunt or grunt <command> in terminal
-*/
-grunt.registerTask('default', 'run');
-grunt.registerTask('run',
-	[
-	'sass', 
-	'postcss', 
-	'watch'
-
-	]
+	// Grunt Tasks
+	// Run these by typing 'grunt' or 'grunt <command>' in your terminal.
+	grunt.registerTask('default', 'run');
+	grunt.registerTask('run',
+		[
+			'sass',
+			'postcss',
+			'watch'
+		]
 	);
-grunt.registerTask('create_css',
-	[
-	'sass',
-	'postcss'
-	]
+	grunt.registerTask('create_css',
+		[
+			'sass',
+			'postcss'
+		]
 	);
 };
