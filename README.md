@@ -14,8 +14,8 @@ Use this Boilerplate to get started with your project right away!
 ## Get started
 1. Clone ```git clone https://github.com/CastleCSS/castlecss.git``` or [download](https://github.com/CastleCSS/castlecss-boilerplate/archive/master.zip) CastleCSS Boilerplate.
 2. Set up your project directory and a basic site structure.
-3. Run ``npm install``in the commandline. This will download the neccecary packages and install them.
-4. Run Grunt from your directory by typing ```Grunt``` in the commandline. If you haven't used Grunt before, be sure to check out the Getting Started guide.
+3. Run ``npm install``in the commandline. This will download and install the required packages.
+4. Run Grunt from your directory by typing ```Grunt``` in the commandline. If you haven't used Grunt before, be sure to check out the [Getting Started guide](http://gruntjs.com/getting-started).
 5. Add some content, do some styling and include functionality.
 6. Run your site locally and see how it all works out!
 
