@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 				// Rewrite and save sourcemap as seperate file
 				map: {
 					inline: false,
-					annotation: 'styles/'
+					annotation: 'dist/css/'
 				},
 				processors: [
 					// Add fallbacks for rem units
