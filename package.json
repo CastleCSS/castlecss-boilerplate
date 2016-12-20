@@ -30,7 +30,7 @@
   "dependencies": {
     "castlecss-buttons": "^0.5.0",
     "castlecss-core": "^2.1.0",
-    "castlecss-icons": "^1.0.0",
+    "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.0"
   },
   "devDependencies": {
