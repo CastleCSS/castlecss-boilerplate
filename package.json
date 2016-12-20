@@ -1,7 +1,7 @@
 {
   "name": "castlecss-boilerplate",
-  "version": "1.0.1",
-  "description": "Boilerplate for CastleCSS",
+  "version": "1.1.0",
+  "description": "HMTL5/CSS Boilerplate with CastleCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/CastleCSS/castlecss-boilerplate.git"
   },
   "keywords": [
-	"boilerplate",
+    "boilerplate",
     "castlecss",
     "castle",
     "css",
@@ -28,9 +28,10 @@
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
-    "castlecss-buttons": "^0.4.1",
-    "castlecss-core": "^2.0.1",
-    "castlecss-notifications": "^0.3.0"
+    "castlecss-buttons": "^0.5.0",
+    "castlecss-core": "^2.1.0",
+    "castlecss-icons": "^1.0.0",
+    "castlecss-notifications": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -38,7 +39,7 @@
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^1.0.0",
+    "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
     "pixrem": "^3.0.0"
   }
