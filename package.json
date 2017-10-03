@@ -28,9 +28,8 @@
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
-    "castlecss-buttons": "^1.0.1",
+    "castlecss-buttons": "^0.5.0",
     "castlecss-core": "^2.1.0",
-    "castlecss-forms": "^1.0.10",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.0"
   },
