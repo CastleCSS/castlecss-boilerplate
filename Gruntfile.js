@@ -45,6 +45,21 @@ module.exports = function(grunt) {
 				]
 			}
 		},
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src: [
+						'./**/*.html',
+						'./dist/**/*.css',
+					]
+				},
+				options: {
+					watchTask: true,
+					server: './'
+				}
+			}
+
+		},
 
 		// Watches for changes in your .scss-files and triggers the tasks sass and postcss.
 		watch: {
@@ -63,6 +78,7 @@ module.exports = function(grunt) {
 		[
 			'sass',
 			'postcss',
+			'browserSync',
 			'watch'
 		]
 	);
