@@ -18,10 +18,21 @@
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+	<script src="node_modules/castlecss-forms/dist/Forms.external.vendors.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () {
+			CastleCSS_Forms_Forms();
+		});
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-inverted">
 		<div class="container">
+			<a class="menu-btn" data-menu-toggle><i class="fa fa-bars"></i></a>
 			<div class="logo">
 				<img src="img/logo.svg" alt="Company Name Logo"/>
 			</div>
@@ -30,7 +41,7 @@
 				<li><a href="products.html">Products</a></li>
 				<li><a href="about.html">About</a></li>
 	            <li><a href="contact.html">Contact</a></li>
-	            <li><a href="clean.html" target="blank">Clean page</a></li>
+	            <li><a href="clean.html">Clean page</a></li>
 	            <li><a href="http://www.castlecss.com" target="blank">Documentation</a></li>
 	      	</ul>
 		</div>
@@ -39,198 +50,131 @@
 	<!-- Hero banner to display your message and/or call-to-action -->
 	<section class="hero">
 		<div class="container">
-			<div class="p p-b3-0">
+			<div class="p p-b3-0 ta-center">
 				<h1>Hello, world!</h1>
-				<p>Nulla viverra, neque a blandit fermentum, magna sem dictum lacus, fringilla dignissim orci risus nec leo. Sed imperdiet lacinia efficitur. Vivamus varius finibus leo, ut pharetra lectus elementum id. In hac habitasse platea dictumst. Proin augue lorem, sollicitudin et leo et, pretium ultricies orci. Aenean ante est, rhoncus a dapibus et, luctus id purus. Sed ornare metus a nisl volutpat faucibus. Vivamus venenatis fermentum magna, at hendrerit tellus sagittis ut. </p>
-				<a href="#" class="btn-theme02">Read more</a>
+				<p>Nulla viverra, neque a blandit fermentum, magna sem dictum lacus, fringilla dignissim orci risus nec leo. Sed imperdiet lacinia efficitur. Vivamus varius finibus leo, ut pharetra lectus elementum id. In hac habitasse platea dictumst. Proin augue lorem, sollicitudin et leo et, pretium ultricies orci. Aenean ante est, rhoncus a dapibus et, luctus id purus. Sed ornare metus a nisl volutpat faucibus. Vivamus venenatis fermentum magna, at hendrerit tellus sagittis ut. Culpa laborum do ea veniam tempor sint aliquip.</p>
+				<a href="#" class="btn-theme02 mr">Read more</a> <a href="#" class="btn-theme03">Lorem ipsum</a>
 			</div>
 		</div>
 	</section>
 
 	<!-- Main section to place your content -->
 	<section class="container">
+		<div class="p p-b3-0 mt-2x mb mb-b3-2x">
 
-		<!-- Three in a row -->
-		<div class="p p-b3-0 mb-2x mt mt-b3-2x">
-			<div class="g">
-				<div class="b0_12 b3_08">
-					<div class="pt pb">
-						<h2>Heading</h2>
-						<p><i class="fa fa-pied-piper"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. </p>
-						<a href="#">Read more</a>
-					</div>
+			<!-- Grid -->
+			<div class="g gutter-small">
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
-				<div class="b0_12 b3_08">
-					<div class="pt pb">
-						<h2>Heading</h2>
-						<p><i class="fa fa-info-circle"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. </p>
-						<a href="#">Read more</a>
-					</div>
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
-				<div class="b0_12 b3_08">
-					<div class="pt pb">
-						<h2>Heading</h2>
-						<p><i class="fa fa-binoculars"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. </p>
-						<a href="#">Read more</a>
-					</div>
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
-			</div>
-		</div>
-
-		<!-- Content with sidebar -->
-		<div class="p p-b3-0 mb-2x">
-			<div class="g">
-				<div class="b0_12 b3_06">
-					<!-- Example of sidebar with menu -->
-					<aside class="p block">
-						<h2 class="mt-0">Menu</h2>
-						<ul class="list-unstyled">
-							<li><a href="#">Link1</a></li>
-							<li><a href="#">Link2</a></li>
-							<li><a href="#">Link3</a></li>
-							<li><a href="#">Link4</a></li>
-							<li><a href="#">Link5</a></li>
-						</ul>
-					</aside>
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
-
-				<!-- Example of content with typography -->
-				<div class="b0_12 b3_18">
-					<div class="p block">
-						<h1 class="mt-0">Basic layout</h1>
-
-						<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-						<div class="alert mb">
-							<i class="fa fa-info-circle"></i>&nbsp;Friendly alert
-						</div>
-						<h2>Header Level 2</h2>
-						<ol>
-							<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-							<li>Aliquam tincidunt mauris eu risus.</li>
-						</ol>
-						<blockquote>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-						</blockquote>
-						<div class="alert-warning mb">
-							<i class="fa fa-warning"></i>&nbsp;This is a warning with a <a href="#">link</a>!
-						</div>
-
-						<h3 class="head2">Header Level 3 met .head2 styling</h3>
-						<ul>
-							<li>By using .head, .head1, .head2, etc you can use heading styling on any element you want</li>
-							<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-							<li>Aliquam tincidunt mauris eu risus.</li>
-						</ul>
-
-						<div class="mb-3x">
-							<!-- Standard buttons -->
-							<h2 class="head2">Standard buttons</h2>
-							<a href="#" class="btn mb">standard button</a></li>
-							<a href="#" class="btn-theme01 mb">btn-theme01</a>
-							<a href="#" class="btn-theme02 mb">btn-theme02</a>
-							<a href="#" class="btn-theme03 mb">btn-theme03</a>
-							<a href="#" class="btn-theme04 mb">btn-theme04</a>
-							<a href="#" class="btn-theme05 mb">btn-theme05</a>
-						</div>
-
-						<div class="mb-3x">
-							<h2 class="head2">Example buttons with icons</h2>
-							<div class="g mb-3x">
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn btn-full mb"><i class="fa fa-angle-right"></i> Read more</a></div>
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn-theme01 btn-full mb"><i class="fa fa-edit"></i> Edit</a></div>
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn-theme02 btn-full mb"><i class="fa fa-cloud"></i> Cloud</a></div>
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn-theme03 btn-full mb"><i class="fa fa-globe"></i> Globe</a></div>
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn-theme04 btn-full mb"><i class="fa fa-spinner fa-spin"></i> Spin</a></div>
-								<div class="b0_12 b2_06 b6_04"><a href="#" class="btn-theme05 btn-full mb"><i class="fa fa-list"></i> List</a></div>
-							</div>
-						</div>
-						</div>
-					</div>
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
-			</div>
-		</div>
-
-		<!-- Products -->
-		<div class="p p-b3-0 mb-2x">
-			<div class="g">
-				<div class="b0_12">
-					<div class="ta-center">
-						<h2>Products</h2>
-					</div>
-				</div>
-			</div>
-			<div class="g">
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
-				</div>
-				<div class="b0_06 b3_06">
-					<div class="block border transparent">
-						<h3>Product</h3>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-						<span>&euro;&nbsp;6.99</span>
-					</div>
+				<div class="b0_12 b2_06 b5_08">
+					<img src="http://via.placeholder.com/500x400">
 				</div>
 			</div>
 			<div class="g">
 				<div class="b0_12">
-					<div class="ta-center">
-						<a href="#" class="btn btn-theme04">See all products</a>
+					<div class="ta-center mt-2x">
+						<a href="products.html" class="btn btn-theme04">See all products</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
+		<div class="g">
+			<div class="b0_12 b3_20 b3_push_02">
+				<div class="p p-b3-0 mt mt-b3-2x mb">
+					<div class="g ai-center">
+						<div class="b0_12 b3_14">
+							<h2>Lorem ipsum dolor</h2>
+							<p>
+								Ad ullamco magna duis aliqua culpa sint cupidatat ad ea aliqua in non deserunt. Esse laboris sit do aute labore anim dolore
+								minim est. In minim laboris qui eiusmod reprehenderit incididunt quis excepteur nisi. Eiusmod ipsum do tempor nostrud
+								mollit reprehenderit nulla labore aliquip aliquip qui. Proident ullamco eiusmod commodo dolore in nisi ad consequat ex.
+								Irure laboris velit proident sint dolore consectetur laboris. Veniam consequat exercitation officia ut ad reprehenderit
+								minim sit sunt aliqua cillum est occaecat.
+							</p>
+						</div>
+						<div class="b0_12 b3_08 b3_push_02">
+							<img class="radius" src="http://via.placeholder.com/400x300">
+						</div>
+					</div>
+				</div>
+
+				<div class="p p-b3-0 mt mb mb-b3-3x">
+					<div class="g ai-center">
+						<div class="b0_12 b3_08">
+							<img class="radius" src="http://via.placeholder.com/400x300">
+						</div>
+						<div class="b0_12 b3_15 b3_push_01">
+							<h2>Lorem ipsum dolor</h2>
+							<p>
+								Ad ullamco magna duis aliqua culpa sint cupidatat ad ea aliqua in non deserunt. Esse laboris sit do aute labore anim dolore
+								minim est. In minim laboris qui eiusmod reprehenderit incididunt quis excepteur nisi. Eiusmod ipsum do tempor nostrud
+								mollit reprehenderit nulla labore aliquip aliquip qui. Proident ullamco eiusmod commodo dolore in nisi ad consequat ex.
+								Irure laboris velit proident sint dolore consectetur laboris. Veniam consequat exercitation officia ut ad reprehenderit
+								minim sit sunt aliqua cillum est occaecat.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Form -->
+		<div class="g">
+			<div class="b0_12">
+				<div class="block mb-b3-3x p p-b3-3x">
+					<div class="g">
+						<div class="b0_12 b3_12 b5_16">
+							<h2>Lorem ipsum dolor sit amet</h2>
+							<p>
+								Mollit incididunt quis mollit anim sunt quis irure ea laboris aliqua eiusmod. Proident ipsum consequat est adipisicing pariatur Lorem eiusmod sunt est in cupidatat et commodo. Ea elit reprehenderit exercitation proident minim ea tempor.
+							</p>
+							<p>
+								Mollit tempor ut pariatur sint pariatur excepteur occaecat esse amet aliqua laboris qui id. Nostrud consectetur fugiat mollit id sit aliquip adipisicing non qui fugiat deserunt dolor. Mollit elit aute proident ea enim cillum consectetur dolore ad aliquip anim. Anim reprehenderit voluptate excepteur aute proident.
+							</p>
+						</div>
+						<div class="b0_12 b3_11 b3_push_01 b5_07 b5_push_01">
+							<h4>Sign up for our newsletter!</h4>
+							<form class="form pt">
+								<div class="form-fields label-top">
+									<div class="form-field" data-castlecss-field="">
+										<label for="name">Name</label>
+										<input type="text" name="name" class="form-input" id="name">
+									</div>
+									<div class="form-field" data-castlecss-field="">
+										<label for="search">Email address</label>
+										<input type="email" name="email" class="form-input" id="email">
+									</div>
+								</div>
+								<a href="#" class="btn btn-full">
+									<i class="fa fa-angle-right"></i> Submit</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<!-- Footer -->
 	<footer>
 		<div class="container">
-			<hr>
 			<div class="p pl-b3-0 pr-b3-0 pt-b3-2x pb-b3-2x">
 				<div class="g">
 					<div class="b0_12 b3_12">
