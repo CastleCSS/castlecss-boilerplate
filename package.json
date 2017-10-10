@@ -32,20 +32,20 @@
   "homepage": "http://www.castlecss.com",
   "dependencies": {
     "castlecss-buttons": "^1.0.1",
-    "castlecss-core": "^2.1.0",
-    "castlecss-forms": "^1.0.10",
+    "castlecss-core": "^2.5.0",
+    "castlecss-forms": "^1.0.11",
     "castlecss-icons": "^1.0.2",
-    "castlecss-notifications": "^1.0.0"
+    "castlecss-notifications": "^1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "cssnano": "^3.7.3",
+    "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "~1.0.0",
-    "grunt-postcss": "^0.8.0",
+    "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
-    "pixrem": "^3.0.0"
+    "pixrem": "^4.0.1"
   }
 }
