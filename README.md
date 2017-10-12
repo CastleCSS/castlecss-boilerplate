@@ -9,6 +9,7 @@ Use this Boilerplate to get started with your project right away!
 - Configuration for Grunt, to easily compile and minify your Sass files
 - [castlecss-core](https://github.com/CastleCSS/castlecss-core)
 - [castlecss-buttons](https://github.com/CastleCSS/castlecss-buttons)
+- [castlecss-forms](https://github.com/CastleCSS/castlecss-forms)
 - [castlecss-notifications](https://github.com/CastleCSS/castlecss-notifications)
 - [castlecss-breadcrumbs](https://github.com/CastleCSS/castlecss-breadcrumbs)
 - [castlecss-icons](https://github.com/CastleCSS/castlecss-icons)
