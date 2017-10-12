@@ -27,14 +27,6 @@ The project will watch for changes in your scss and html files in your root and 
 - Build the project: ```npm run create_all```
 - Only build CSS: ```npm run create_css```
 
-## Get started
-1. Clone ```git clone https://github.com/CastleCSS/castlecss-boilerplate.git``` or [download](https://github.com/CastleCSS/castlecss-boilerplate/archive/master.zip) CastleCSS Boilerplate.
-2. Set up your project directory and a basic site structure.
-3. Make sure you have the latest version of [npm](https://www.npmjs.com/) installed. From your directory, open a commandline and download the required packages by typing  ```npm install```.
-4. Run Grunt from your directory by typing ```Grunt``` in the commandline. If you haven't used Grunt before, be sure to check out the [Getting Started guide](http://gruntjs.com/getting-started).
-5. Add some content, do some styling and include functionality.
-6. Run your site locally and see how it all works out!
-
 ## Basic structure
 The basis structure for your website should look similar like this:
 
