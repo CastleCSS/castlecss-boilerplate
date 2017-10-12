@@ -10,6 +10,22 @@ Use this Boilerplate to get started with your project right away!
 - [castlecss-core](https://github.com/CastleCSS/castlecss-core)
 - [castlecss-buttons](https://github.com/CastleCSS/castlecss-buttons)
 - [castlecss-notifications](https://github.com/CastleCSS/castlecss-notifications)
+- [castlecss-breadcrumbs](https://github.com/CastleCSS/castlecss-breadcrumbs)
+- [castlecss-icons](https://github.com/CastleCSS/castlecss-icons)
+
+## How to install
+- Download or clone this package
+- Install the project: ```npm install```
+
+## Build and run automatically
+- Start the project with: ```npm run start```
+
+This will automatically start a browserSync server.<br />
+The project will watch for changes in your scss and html files in your root and scss folder and automatically reload when you change something
+
+## Build and run manually
+- Build the project: ```npm run create_all```
+- Only build CSS: ```npm run create_css```
 
 ## Get started
 1. Clone ```git clone https://github.com/CastleCSS/castlecss-boilerplate.git``` or [download](https://github.com/CastleCSS/castlecss-boilerplate/archive/master.zip) CastleCSS Boilerplate.
