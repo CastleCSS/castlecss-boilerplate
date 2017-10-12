@@ -1,0 +1,38 @@
+$p-block: $padding-default*6;
+$p-block-b3: $padding-default*6;
+
+.p-block {
+	padding: $p-block;
+}
+.pt-block {
+	padding-top: $p-block;
+}
+.pr-block {
+	padding-right: $p-block;
+}
+.pb-block {
+	padding-bottom: $p-block;
+}
+.pl-block {
+	padding-left: $p-block;
+}
+
+@media only screen and (min-width: $b3) {
+
+	.p-block {
+		padding: $p-block-b3;
+	}
+	.pt-block {
+		padding-top: $p-block-b3;
+	}
+	.pr-block {
+		padding-right: $p-block-b3;
+	}
+	.pb-block {
+		padding-bottom: $p-block-b3;
+	}
+	.pl-block {
+		padding-left: $p-block-b3;
+	}
+
+}

@@ -9,7 +9,6 @@
 	.logo {
 		display: block;
 		height: 30px;
-		margin: 0 0 $margin-default 0;
 
 		img {
 			height: 100%;
@@ -18,11 +17,23 @@
 
 	// Styling for the menu
 	.nav {
-		display: block;
+		display: none;
+
+		&.expanded {
+			display: block;
+		}
 
 		// Styling for first level menu items
 		> li {
 		}
+	}
+
+	.menu-btn {
+		position: absolute;
+		left: $margin-default;
+		font-size: 26px;
+		line-height: 26px;
+		cursor: pointer;
 	}
 
 	// Default navbar with a light background
@@ -71,13 +82,18 @@
 
 		// Styling for the menu
 		.nav {
-			display: inline-block;
+			margin-left: auto;
+			display: block;
 
 			// First level menu items
 			> li {
 				float: left;
 				margin-left: $margin-default;
 			}
+		}
+
+		.menu-btn {
+			display: none;
 		}
 	}
 }

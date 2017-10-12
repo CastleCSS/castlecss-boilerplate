@@ -4,7 +4,10 @@
   "description": "HMTL5/CSS Boilerplate with CastleCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create_css": "grunt create_css",
+    "create_all": "grunt create_css",
+    "start": "grunt"
   },
   "repository": {
     "type": "git",
@@ -28,19 +31,22 @@
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
-    "castlecss-buttons": "^0.5.0",
-    "castlecss-core": "^2.1.0",
+    "castlecss-breadcrumbs": "^1.1.1",
+    "castlecss-buttons": "^1.0.1",
+    "castlecss-core": "^2.5.0",
+    "castlecss-forms": "^1.0.11",
     "castlecss-icons": "^1.0.2",
-    "castlecss-notifications": "^1.0.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "cssnano": "^3.7.3",
+    "castlecss-notifications": "^1.0.1",
+    "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-postcss": "^0.8.0",
+    "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
-    "pixrem": "^3.0.0"
+    "pixrem": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-browser-sync": "^2.2.0"
   }
 }

@@ -2,11 +2,17 @@
 .hero {
 	background: $theme04;
 	color: $theme02;
-	padding: $padding-default*6 0;
-	margin-bottom: $margin-default;
 
 	h1 {
-		font-size: 6rem;
+		font-size: 4rem;
 		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: $b3) {
+	.hero {
+		h1 {
+			font-size: 6rem;
+		}
 	}
 }

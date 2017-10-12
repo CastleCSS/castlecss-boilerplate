@@ -28,8 +28,7 @@ module.exports = function(grunt) {
 			options: {
 				// Rewrite and save sourcemap as seperate file
 				map: {
-					inline: false,
-					annotation: 'dist/css/'
+					inline: false
 				},
 				processors: [
 					// Add fallbacks for rem units
@@ -44,6 +43,21 @@ module.exports = function(grunt) {
 					require('cssnano')()
 				]
 			}
+		},
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src: [
+						'./**/*.html',
+						'./dist/**/*.css',
+					]
+				},
+				options: {
+					watchTask: true,
+					server: './'
+				}
+			}
+
 		},
 
 		// Watches for changes in your .scss-files and triggers the tasks sass and postcss.
@@ -63,6 +77,7 @@ module.exports = function(grunt) {
 		[
 			'sass',
 			'postcss',
+			'browserSync',
 			'watch'
 		]
 	);
