@@ -1,4 +1,17 @@
 // Basic footer styling for demo purposes
+footer {
+	background-color: $theme02;
+	color: $color01;
+
+	a {
+		color: $color01;
+
+		&:hover {
+			color: inherit;
+		}
+	}
+}
+
 @media only screen and (min-width: $b3) {
 	footer {
 

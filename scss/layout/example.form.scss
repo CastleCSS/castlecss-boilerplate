@@ -1,0 +1,12 @@
+// Basic form styling for demo purposes
+.input-indicator {
+	.block & {
+		background: $color01;
+	}
+}
+
+.form-fields {
+	.form-field {
+		margin-bottom: $margin-default;
+	}
+}
