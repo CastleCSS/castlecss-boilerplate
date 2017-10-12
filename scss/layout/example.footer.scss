@@ -5,6 +5,10 @@ footer {
 
 	a {
 		color: $color01;
+
+		&:hover {
+			color: inherit;
+		}
 	}
 }
 

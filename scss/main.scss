@@ -21,10 +21,13 @@
 @import "layout/example.footer";
 @import "layout/example.form";
 
+
 /*
-	--------------------------------------
-	Include your own files above this line
+--------------------------------------
+Include your own files above this line
 */
 
 @import "node_modules/castlecss-core/sass/base/utility";
 @import "node_modules/castlecss-core/sass/base/utility_spacers";
+
+@import "base/example.utility";
