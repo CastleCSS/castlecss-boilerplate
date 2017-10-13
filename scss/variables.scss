@@ -99,10 +99,23 @@ $flexbox-grid:	 true;
 $grid-gutter:	 12px;
 $grid-gutter-b1: 12px;
 $grid-gutter-b2: 12px;
-$grid-gutter-b3: 12px;
-$grid-gutter-b4: 12px;
-$grid-gutter-b5: 12px;
-$grid-gutter-b6: 12px;
+$grid-gutter-b3: 16px;
+$grid-gutter-b4: 16px;
+$grid-gutter-b5: 16px;
+$grid-gutter-b6: 16px;
+
+/*
+	Gutter map
+	Must be the same amount of gutters and $gutter-map as above
+*/
+$gutter-map: (
+	1: $grid-gutter-b1,
+	2: $grid-gutter-b2,
+	3: $grid-gutter-b3,
+	4: $grid-gutter-b4,
+	5: $grid-gutter-b5,
+	6: $grid-gutter-b6,
+);
 
 /*
 	Default margin and padding

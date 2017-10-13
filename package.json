@@ -1,6 +1,6 @@
 {
   "name": "castlecss-boilerplate",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "HMTL5/CSS Boilerplate with CastleCSS",
   "main": "index.js",
   "scripts": {
