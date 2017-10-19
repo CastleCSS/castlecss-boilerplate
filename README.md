@@ -13,6 +13,7 @@ Use this Boilerplate to get started with your project right away!
 - [castlecss-notifications](https://github.com/CastleCSS/castlecss-notifications)
 - [castlecss-breadcrumbs](https://github.com/CastleCSS/castlecss-breadcrumbs)
 - [castlecss-icons](https://github.com/CastleCSS/castlecss-icons)
+- [castlecss-stickers](https://github.com/CastleCSS/castlecss-stickers)
 
 ## How to install
 - Download or clone this package
