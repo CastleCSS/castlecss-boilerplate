@@ -76,10 +76,6 @@ module.exports = function(grunt) {
 
 			jpg: {
 				options: {
-					optimizationLevel: 7,
-					svgoPlugins: [{
-						removeComments: true
-					}],
 					progressive: true,
 					use: [
 						mozjpeg(),
@@ -89,13 +85,13 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'img/',
-					src: ['**/*.jpg'],
+					src: ['**/*.{jpg,jpeg}'],
 					dest: 'dist/img'
 				}]
 			},
 			rest: {
 				options: {
-					optimizationLevel: 7,
+					optimizationLevel: 7, //about optimizationlevel:https://www.npmjs.com/package/grunt-contrib-imagemin#optimizationlevel-png
 					svgoPlugins: [{
 						removeComments: true,
 						cleanupAttrs: true,
