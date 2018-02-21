@@ -15,6 +15,7 @@
     "url": "git+https://github.com/CastleCSS/castlecss-boilerplate.git"
   },
   "keywords": [
+    "front-end",
     "boilerplate",
     "castlecss",
     "castle",
@@ -35,10 +36,11 @@
     "autoprefixer": "^7.1.5",
     "castlecss-breadcrumbs": "^1.1.1",
     "castlecss-buttons": "^1.0.1",
-    "castlecss-core": "^2.5.0",
+    "castlecss-core": "^2.6.0",
     "castlecss-forms": "^1.0.11",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
+    "castlecss-stickers": "^1.0.0",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-postcss": "^0.9.0",
