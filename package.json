@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create_css": "grunt create_css",
-    "create_all": "grunt create_css",
+    "create_img": "grunt create_img",
+    "create_all": "grunt create_css & grunt create_img",
     "start": "grunt"
   },
   "repository": {
@@ -32,23 +33,26 @@
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^8.0.0",
     "castlecss-breadcrumbs": "^1.1.1",
     "castlecss-buttons": "^1.0.1",
-    "castlecss-core": "^2.6.0",
-    "castlecss-forms": "^1.0.11",
+    "castlecss-core": "^2.7.0",
+    "castlecss-forms": "^1.0.12",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
     "castlecss-stickers": "^1.0.0",
     "cssnano": "^3.10.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.2",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^2.1.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "imagemin-pngcrush": "^5.1.0",
+    "imagemin-mozjpeg": "^7.0.0",
     "jit-grunt": "^0.10.0",
     "pixrem": "^4.0.1"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-browser-sync": "^2.2.0"
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "~1.0.0"
   }
 }

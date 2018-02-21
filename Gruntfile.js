@@ -4,6 +4,9 @@ module.exports = function(grunt) {
 	/* Using jit-grunt for automatically loading all required plugins */
 	require('jit-grunt')(grunt);
 
+	const mozjpeg = require('imagemin-mozjpeg');
+	const imageminPngcrush = require('imagemin-pngcrush');
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -67,7 +70,49 @@ module.exports = function(grunt) {
 			options: {
 				spawn: false,
 			}
+		},
+
+		imagemin: {
+
+			jpg: {
+				options: {
+					progressive: true,
+					use: [
+						mozjpeg(),
+					],
+					cache: false
+				},
+				files: [{
+					expand: true,
+					cwd: 'img/',
+					src: ['**/*.{jpg,jpeg}'],
+					dest: 'dist/img'
+				}]
+			},
+			rest: {
+				options: {
+					optimizationLevel: 7, //about optimizationlevel:https://www.npmjs.com/package/grunt-contrib-imagemin#optimizationlevel-png
+					svgoPlugins: [{
+						removeComments: true,
+						cleanupAttrs: true,
+						removeMetadata: true,
+						minifyStyles: true,
+					}],
+					progressive: true,
+					plugins: [
+						imageminPngcrush()
+					],
+					cache: false
+				},
+				files: [{
+					expand: true,
+					cwd: 'img/',
+					src: ['**/*.{png,gif,svg}'],
+					dest: 'dist/img'
+				}]
+			}
 		}
+
 	})
 
 	// Grunt Tasks
@@ -75,6 +120,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', 'run');
 	grunt.registerTask('run',
 		[
+			'imagemin',
 			'sass',
 			'postcss',
 			'browserSync',
@@ -85,6 +131,11 @@ module.exports = function(grunt) {
 		[
 			'sass',
 			'postcss'
+		]
+	);
+	grunt.registerTask('create_img',
+		[
+			'imagemin'
 		]
 	);
 };
