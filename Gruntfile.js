@@ -1,6 +1,9 @@
 /*	Grunt Task configuration */
 module.exports = function(grunt) {
 
+	const Fiber = require('fibers');
+	const sass = require('node-sass');
+
 	/* Using jit-grunt for automatically loading all required plugins */
 	require('jit-grunt')(grunt);
 
@@ -13,6 +16,8 @@ module.exports = function(grunt) {
 		// Compile Sass to CSS and produce SoureMaps;
 		sass: {
 			options: {
+				implementation: sass,
+				fiber: Fiber,
 				sourceMap: false,
 				outputStyle: 'uncompressed'
 			},

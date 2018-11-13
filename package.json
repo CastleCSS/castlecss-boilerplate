@@ -33,26 +33,28 @@
   },
   "homepage": "http://www.castlecss.com",
   "dependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^9.3.1",
     "castlecss-breadcrumbs": "^1.1.1",
     "castlecss-buttons": "^1.0.1",
     "castlecss-core": "^2.7.0",
-    "castlecss-forms": "^1.0.12",
+    "castlecss-forms": "^1.1.0",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
     "castlecss-stickers": "^1.0.0",
-    "cssnano": "^3.10.0",
-    "grunt": "^1.0.2",
+    "cssnano": "^4.1.7",
+    "grunt": "^1.0.3",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.1.0",
-    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-sass": "^3.0.2",
+    "grunt-contrib-imagemin": "^3.1.0",
     "imagemin-pngcrush": "^5.1.0",
-    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
     "jit-grunt": "^0.10.0",
     "pixrem": "^4.0.1"
   },
   "devDependencies": {
+    "fibers": "^3.0.0",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-watch": "~1.0.0"
+    "grunt-contrib-watch": "~1.1.0",
+    "node-sass": "^4.10.0"
   }
 }
